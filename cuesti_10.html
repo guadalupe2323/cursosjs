@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+  <html lang="
+  " dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>formulario</title>
+      <style media="screen">
+        p
+        {
+          margin: 20px 0 0;
+        }
+
+form{
+  background: pink;
+}
+      </style>
+      <script src="js/jquery-3.3.1.min.js" type="text/javascript">
+
+      </script>
+    </head>
+    <body>
+      <form name="formu" id ="formu">
+         <h1><strong>CLASIFICACIÓN DE LOS ANIMALES</strong></h1>
+         <hr>
+        <br><br>
+
+        <label for="">1.- Los perros son:</label>  <br>
+          <input id="perros" name="clasi"type="checkbox" onclick="Check (this.value)" value="true" >Caninos
+              <br>
+          <input  name="clasi" type="checkbox"  onclick="Check (this.value)" value="false"  >Bobinos <br>
+              <hr>
+              <label for="">2.- Los gatos son:</label><br>
+                <input id="gatos" name="clasi"type="checkbox" onclick="Check (this.value)" value="true" >Mamiferos
+                    <br>
+                <input  name="clasi" type="checkbox"  onclick="Check (this.value)"value="false">Bobinos <br>
+                    <hr>
+                    <label for="">3.- Las Culebras son:</label> <br>
+                      <input name="clasi"type="checkbox" onclick="Check (this.value)" value="false"  >Caninos
+                          <br>
+                      <input id="Culebras" name="clasi" type="checkbox"  onclick="Check (this.value)"value="true">Rectiles  <br>
+                          <hr>
+              <label for="">4.- La ranas son:</label><br>
+              <input id="ranas" name="clasi"type="checkbox"  onclick="Check (this.value)"value="false"  >Caninos
+              <br>
+              <input id="ranas" name="clasi"type="checkbox"  onclick="Check (this.value)"value="true" >anfivios
+              <br>
+              <hr>
+              <label for="">5.- Las ballenas son:</label>  <br>
+                <input id="ballenas" name="clasi"type="checkbox" onclick="Check (this.value)" value="true"  >Acuaticas
+                    <br>
+                <input name="clasi" type="checkbox"  onclick="Check (this.value)"value="false" >Bobinos  <br>
+                    <hr>
+              <label for="">6.- Las vacas son:</label><br>
+              <input id="vacas" name="clasi" type="checkbox"  onclick="Check (this.value)"value="true" >Bobinos  <br>
+              <input  name="clasi"type="checkbox"  onclick="Check (this.value)"value="false" >aves</label>  <br>
+                  <br>
+                  <p></p>
+                  <hr><hr>
+<label for="">Evaluación</label>
+                  <input id="res"t ype="text" name="respuesta" size="22" if(value==true){
+                    style="color:blue"}
+                  else{
+                      style="color:red"}>
+      </form>
+
+      <script>
+
+
+      function Check (clasi) {
+        document.formu.respuesta.value = clasi
+      }
+
+//  $("p").last().addClass("input");
+
+      </script>
+
+    </body>
+  </html>

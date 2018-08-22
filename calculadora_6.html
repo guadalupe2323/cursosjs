@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+
+    function calcular(operaciones){ //funcion
+      //declaracion de variables
+        var numero1=document.calc.numero1.value
+        var numero2=document.calc.numero2.value
+        var resul= eval(numero1 + operaciones + numero2)
+        //nos escribe el resultado en la caja
+        document.calc.resultado.value=resul
+
+
+    }
+    </script>
+  </head>
+  <body>
+    <p onclick= "alert(`HAS TUS OPERACIONES`)">CALCULADORA</p>
+<!--inicio de formulario-->
+    <form name="calc" id="calc" class="" >
+
+      <!--crea las cajas para introducir los valores-->
+<label for="">Num1</label>
+      <input type="text" name="numero1"  value="0" size="12">
+            <br>
+    <label for="">Num2</label>
+      <input type="text" name="numero2"  value="0" size="12">
+    <br>
+    <br>
+    <!--crea los botones para realizar las operaciones-->
+    <input type="button" name="" size="20" value="+"onclick="calcular('+')">
+    <br>
+<input type="button" name="" size="20" value="-"onclick="calcular('-')">
+<br>
+<input type="button" name="" size="20" value="*"onclick="calcular('*')">
+<br>
+<input type="button" name="" size="20" value="/" onclick="calcular('/')">
+<br>
+<!--caja para introducir resultados-->
+<input type="text" name="resultado" value="0" size="12">
+<!--fin del formulario-->
+    </form>
+
+  </body>
+</html>

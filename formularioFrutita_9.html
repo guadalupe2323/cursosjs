@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="
+" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>formulario</title>
+    <script type="text/javascript">
+      function Check (frutas) {
+        document.formulario.respuesta.value =frutas
+      }
+    </script>
+  </head>
+  <body>
+    <form name="formulario" id="formulario" class="" >
+       <h1  ><strong>¿Cúal es tu fruta favorita?</strong></h1>
+       <hr>
+      <br><br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+            value="Manzana">Manzana <br>
+            <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+            value="Pera">Pera <br>
+            <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+            value="Fresa">Fresa<br>
+      <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+          value="Uva">Uva<br>
+      <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+        value="Durazno">Durasno<br>
+      <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+        value="Mango">Mango<br>
+      <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+        value="Cereza">Cereza<br>
+      <br>
+      <input type="radio" name="frutas" onclick="Check (this.value)"
+        value="Tuna">Tuna<br>
+      <br>
+    <input type="text" name="respuesta" size="22">
+    </form>
+  </body>
+</html>
